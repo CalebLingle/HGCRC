@@ -1,0 +1,229 @@
+---
+---
+
+<section class="bg-light py-16" id="facilities">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4 text-primary font-['Georgia']">Our Facilities</h2>
+    <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">
+      Discover our range of modern facilities designed to create the perfect retreat experience.
+    </p>
+    
+    <div class="relative">
+      <!-- Scroll controls -->
+      <div class="absolute top-1/2 -left-4 -translate-y-1/2 z-10">
+        <button id="scroll-left" class="bg-dark hover:bg-primary text-white p-3 rounded-full shadow-lg transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+      </div>
+      <div class="absolute top-1/2 -right-4 -translate-y-1/2 z-10">
+        <button id="scroll-right" class="bg-dark hover:bg-primary text-white p-3 rounded-full shadow-lg transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Scrollable facilities container -->
+      <div class="overflow-x-auto hide-scrollbar py-4 px-4" id="facilities-container">
+        <div class="flex gap-6 min-w-max">
+          <!-- Dorms Card -->
+          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
+              <!-- Replace with actual image when available -->
+              <img 
+                src="/cottage-icon.png" 
+                alt="Dorms" 
+                class="w-16 h-16 opacity-50"
+              />
+            </div>
+            <div class="p-5 bg-dark text-white flex flex-col h-40">
+              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Dorms</h3>
+              <p class="text-gray-300 mb-auto">Comfortable group accommodations that foster fellowship and community.</p>
+              <a href="#dorms" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+                Learn more 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Lodge Card -->
+          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
+              <!-- Replace with actual image when available -->
+              <img 
+                src="/lodge-icon.png" 
+                alt="Lodge" 
+                class="w-16 h-16 opacity-50"
+              />
+            </div>
+            <div class="p-5 bg-dark text-white flex flex-col h-40">
+              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Lodge</h3>
+              <p class="text-gray-300 mb-auto">Our flagship facility designed for comfort and connection with nature.</p>
+              <a href="#lodge" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+                Learn more 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Dining Hall Card -->
+          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
+              <!-- Replace with actual image when available -->
+              <img 
+                src="/utensils-icon.png" 
+                alt="Dining Hall" 
+                class="w-16 h-16 opacity-50"
+              />
+            </div>
+            <div class="p-5 bg-dark text-white flex flex-col h-40">
+              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Dining Hall</h3>
+              <p class="text-gray-300 mb-auto">Spacious dining area where groups gather for nourishing meals and fellowship.</p>
+              <a href="#dining-hall" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+                Learn more 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Life Center Card -->
+          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
+              <!-- Replace with actual image when available -->
+              <img 
+                src="/compass-icon.png" 
+                alt="Life Center" 
+                class="w-16 h-16 opacity-50"
+              />
+            </div>
+            <div class="p-5 bg-dark text-white flex flex-col h-40">
+              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Life Center</h3>
+              <p class="text-gray-300 mb-auto">Versatile space perfect for large gatherings, worship sessions and activities.</p>
+              <a href="#life-center" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+                Learn more 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Outback Lodge Card -->
+          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
+              <!-- Replace with actual image when available -->
+              <img 
+                src="/tent-icon.png" 
+                alt="Outback Lodge" 
+                class="w-16 h-16 opacity-50"
+              />
+            </div>
+            <div class="p-5 bg-dark text-white flex flex-col h-40">
+              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Outback Lodge</h3>
+              <p class="text-gray-300 mb-auto">Rustic retreat space nestled deeper in nature for a more secluded experience.</p>
+              <a href="#outback-lodge" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+                Learn more 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Lower Lodge Card -->
+          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
+              <!-- Replace with actual image when available -->
+              <img 
+                src="/cottage-icon.png" 
+                alt="Lower Lodge" 
+                class="w-16 h-16 opacity-50"
+              />
+            </div>
+            <div class="p-5 bg-dark text-white flex flex-col h-40">
+              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Lower Lodge</h3>
+              <p class="text-gray-300 mb-auto">Cozy meeting space with scenic views, perfect for smaller gatherings.</p>
+              <a href="#lower-lodge" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+                Learn more 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- The Barn Card -->
+          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+            <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
+              <!-- Replace with actual image when available -->
+              <img 
+                src="/campfire-icon.png" 
+                alt="The Barn" 
+                class="w-16 h-16 opacity-50"
+              />
+            </div>
+            <div class="p-5 bg-dark text-white flex flex-col h-40">
+              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">The Barn</h3>
+              <p class="text-gray-300 mb-auto">Rustic multi-purpose space for activities, games, and indoor recreation.</p>
+              <a href="#the-barn" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+                Learn more 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll indicators -->
+      <div class="flex justify-center gap-2 mt-6">
+        <span class="h-2 w-2 rounded-full bg-primary opacity-100"></span>
+        <span class="h-2 w-2 rounded-full bg-primary opacity-50"></span>
+        <span class="h-2 w-2 rounded-full bg-primary opacity-50"></span>
+        <span class="h-2 w-2 rounded-full bg-primary opacity-50"></span>
+        <span class="h-2 w-2 rounded-full bg-primary opacity-50"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<script>
+  // Client-side JavaScript to handle the scrolling functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('facilities-container');
+    const scrollLeftBtn = document.getElementById('scroll-left');
+    const scrollRightBtn = document.getElementById('scroll-right');
+    
+    if (container && scrollLeftBtn && scrollRightBtn) {
+      const cardWidth = 320; // The width of each card (w-80) plus the gap
+      
+      scrollLeftBtn.addEventListener('click', () => {
+        container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      });
+      
+      scrollRightBtn.addEventListener('click', () => {
+        container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      });
+    }
+  });
+</script>
