@@ -76,7 +76,8 @@ export default function Button({ text, onClick }: ButtonProps) {
 - For responsive design, use Tailwind's responsive prefixes (sm, md, lg, xl)
 - Color Palette Preferences:
     - Primary: Hex #1991b8
-    - Secondaries: Hex #1e4220, Hex #f7d064
+    - Secondary: Hex #1e4220
+    - Tertiary: Hex #f7d064
 - Font Preferences:
     - Primary: Georgia Regular and Bold
     - Secondary: Archivo
