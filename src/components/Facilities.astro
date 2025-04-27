@@ -27,158 +27,166 @@
       
       <!-- Scrollable facilities container -->
       <div class="overflow-x-auto hide-scrollbar py-4 px-4" id="facilities-container">
-        <div class="flex gap-6 min-w-max">
+        <div class="flex gap-6 facilities-wrapper">
           <!-- Dorms Card -->
-          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+          <div class="facility-card rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-all duration-500 cursor-pointer" data-facility="dorms">
             <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
-              <!-- Replace with actual image when available -->
-              <img 
-                src="/cottage-icon.png" 
-                alt="Dorms" 
-                class="w-16 h-16 opacity-50"
-              />
+              <img src="/cottage-icon.png" alt="Dorms" class="w-16 h-16 opacity-50" />
             </div>
-            <div class="p-5 bg-dark text-white flex flex-col h-40">
-              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Dorms</h3>
+            <div class="facility-card-content p-5 bg-dark text-white flex flex-col h-52">
+              <h3 class="text-2xl font-bold mb-3 text-accent font-['Georgia']">Dorms</h3>
               <p class="text-gray-300 mb-auto">Comfortable group accommodations that foster fellowship and community.</p>
-              <a href="#dorms" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+              <button class="learn-more-btn text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-4">
                 Learn more 
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
           
           <!-- Lodge Card -->
-          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+          <div class="facility-card rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-all duration-500 cursor-pointer" data-facility="lodge">
             <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
-              <!-- Replace with actual image when available -->
-              <img 
-                src="/lodge-icon.png" 
-                alt="Lodge" 
-                class="w-16 h-16 opacity-50"
-              />
+              <img src="/lodge-icon.png" alt="Lodge" class="w-16 h-16 opacity-50" />
             </div>
-            <div class="p-5 bg-dark text-white flex flex-col h-40">
-              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Lodge</h3>
+            <div class="facility-card-content p-5 bg-dark text-white flex flex-col h-52">
+              <h3 class="text-2xl font-bold mb-3 text-accent font-['Georgia']">Lodge</h3>
               <p class="text-gray-300 mb-auto">Our flagship facility designed for comfort and connection with nature.</p>
-              <a href="#lodge" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+              <button class="learn-more-btn text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-4">
                 Learn more 
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
           
           <!-- Dining Hall Card -->
-          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+          <div class="facility-card rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-all duration-500 cursor-pointer" data-facility="dining-hall">
             <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
-              <!-- Replace with actual image when available -->
-              <img 
-                src="/utensils-icon.png" 
-                alt="Dining Hall" 
-                class="w-16 h-16 opacity-50"
-              />
+              <img src="/utensils-icon.png" alt="Dining Hall" class="w-16 h-16 opacity-50" />
             </div>
-            <div class="p-5 bg-dark text-white flex flex-col h-40">
-              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Dining Hall</h3>
+            <div class="facility-card-content p-5 bg-dark text-white flex flex-col h-52">
+              <h3 class="text-2xl font-bold mb-3 text-accent font-['Georgia']">Dining Hall</h3>
               <p class="text-gray-300 mb-auto">Spacious dining area where groups gather for nourishing meals and fellowship.</p>
-              <a href="#dining-hall" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+              <button class="learn-more-btn text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-4">
                 Learn more 
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
           
           <!-- Life Center Card -->
-          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+          <div class="facility-card rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-all duration-500 cursor-pointer" data-facility="life-center">
             <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
-              <!-- Replace with actual image when available -->
-              <img 
-                src="/compass-icon.png" 
-                alt="Life Center" 
-                class="w-16 h-16 opacity-50"
-              />
+              <img src="/compass-icon.png" alt="Life Center" class="w-16 h-16 opacity-50" />
             </div>
-            <div class="p-5 bg-dark text-white flex flex-col h-40">
-              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Life Center</h3>
+            <div class="facility-card-content p-5 bg-dark text-white flex flex-col h-52">
+              <h3 class="text-2xl font-bold mb-3 text-accent font-['Georgia']">Life Center</h3>
               <p class="text-gray-300 mb-auto">Versatile space perfect for large gatherings, worship sessions and activities.</p>
-              <a href="#life-center" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+              <button class="learn-more-btn text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-4">
                 Learn more 
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
           
           <!-- Outback Lodge Card -->
-          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+          <div class="facility-card rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-all duration-500 cursor-pointer" data-facility="outback-lodge">
             <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
-              <!-- Replace with actual image when available -->
-              <img 
-                src="/tent-icon.png" 
-                alt="Outback Lodge" 
-                class="w-16 h-16 opacity-50"
-              />
+              <img src="/tent-icon.png" alt="Outback Lodge" class="w-16 h-16 opacity-50" />
             </div>
-            <div class="p-5 bg-dark text-white flex flex-col h-40">
-              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Outback Lodge</h3>
+            <div class="facility-card-content p-5 bg-dark text-white flex flex-col h-52">
+              <h3 class="text-2xl font-bold mb-3 text-accent font-['Georgia']">Outback Lodge</h3>
               <p class="text-gray-300 mb-auto">Rustic retreat space nestled deeper in nature for a more secluded experience.</p>
-              <a href="#outback-lodge" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+              <button class="learn-more-btn text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-4">
                 Learn more 
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
           
           <!-- Lower Lodge Card -->
-          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+          <div class="facility-card rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-all duration-500 cursor-pointer" data-facility="lower-lodge">
             <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
-              <!-- Replace with actual image when available -->
-              <img 
-                src="/cottage-icon.png" 
-                alt="Lower Lodge" 
-                class="w-16 h-16 opacity-50"
-              />
+              <img src="/cottage-icon.png" alt="Lower Lodge" class="w-16 h-16 opacity-50" />
             </div>
-            <div class="p-5 bg-dark text-white flex flex-col h-40">
-              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">Lower Lodge</h3>
+            <div class="facility-card-content p-5 bg-dark text-white flex flex-col h-52">
+              <h3 class="text-2xl font-bold mb-3 text-accent font-['Georgia']">Lower Lodge</h3>
               <p class="text-gray-300 mb-auto">Cozy meeting space with scenic views, perfect for smaller gatherings.</p>
-              <a href="#lower-lodge" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+              <button class="learn-more-btn text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-4">
                 Learn more 
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
           
           <!-- The Barn Card -->
-          <div class="rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]">
+          <div class="facility-card rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 transition-all duration-500 cursor-pointer" data-facility="the-barn">
             <div class="h-48 w-full bg-gray-200 flex items-center justify-center">
-              <!-- Replace with actual image when available -->
-              <img 
-                src="/campfire-icon.png" 
-                alt="The Barn" 
-                class="w-16 h-16 opacity-50"
-              />
+              <img src="/campfire-icon.png" alt="The Barn" class="w-16 h-16 opacity-50" />
             </div>
-            <div class="p-5 bg-dark text-white flex flex-col h-40">
-              <h3 class="text-2xl font-bold mb-2 text-accent font-['Georgia']">The Barn</h3>
+            <div class="facility-card-content p-5 bg-dark text-white flex flex-col h-52">
+              <h3 class="text-2xl font-bold mb-3 text-accent font-['Georgia']">The Barn</h3>
               <p class="text-gray-300 mb-auto">Rustic multi-purpose space for activities, games, and indoor recreation.</p>
-              <a href="#the-barn" class="text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-2">
+              <button class="learn-more-btn text-accent hover:text-accent/80 inline-flex items-center transition-colors mt-4">
                 Learn more 
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Facility Details Modal -->
+      <div id="facility-modal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="relative max-w-4xl mx-auto mt-20 bg-dark rounded-lg shadow-xl overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+              <div class="facility-image bg-gray-200 h-full min-h-[300px] flex items-center justify-center">
+                <img src="" alt="" id="modal-image" class="max-h-[400px] w-auto object-cover" />
+              </div>
+            </div>
+            <div class="md:w-1/2 p-8 text-white">
+              <div class="flex justify-between items-start">
+                <h3 id="modal-title" class="text-3xl font-bold mb-4 text-accent font-['Georgia']"></h3>
+                <button id="close-modal" class="text-gray-400 hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div id="modal-description" class="mb-6 text-gray-300"></div>
+              
+              <div class="mb-6">
+                <h4 class="text-xl font-bold mb-3 text-white">Features:</h4>
+                <ul id="modal-features" class="list-disc pl-5 text-gray-300 space-y-1">
+                  <!-- Features will be populated here -->
+                </ul>
+              </div>
+              
+              <div>
+                <h4 class="text-xl font-bold mb-3 text-white">Capacity:</h4>
+                <p id="modal-capacity" class="text-gray-300"></p>
+              </div>
+              
+              <div class="mt-6">
+                <a href="#contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors">
+                  Reserve This Facility
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -208,12 +216,111 @@
 </style>
 
 <script>
-  // Client-side JavaScript to handle the scrolling functionality
+  // Client-side JavaScript to handle the scrolling and modal functionality
   document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('facilities-container');
     const scrollLeftBtn = document.getElementById('scroll-left');
     const scrollRightBtn = document.getElementById('scroll-right');
+    const facilityCards = document.querySelectorAll('.facility-card');
+    const facilityModal = document.getElementById('facility-modal');
+    const closeModalBtn = document.getElementById('close-modal');
     
+    // Facility data
+    const facilitiesData = {
+      "dorms": {
+        name: "Dorms",
+        description: "Our comfortable dormitories provide group accommodations that foster fellowship and community. Each dorm is designed with retreat groups in mind, focusing on both comfort and functionality to enhance the retreat experience.",
+        image: "/cottage-icon.png",
+        features: [
+          "Bunk-style accommodations",
+          "Separate wings for male and female housing",
+          "Common gathering spaces",
+          "Climate controlled environment",
+          "Proximity to main facilities"
+        ],
+        capacity: "Each dorm wing can accommodate up to 30 people, with a total capacity of 60 guests."
+      },
+      "lodge": {
+        name: "Lodge",
+        description: "Our flagship facility is designed for maximum comfort and connection with nature. The lodge offers a perfect blend of rustic charm and modern amenities, creating an inviting space for groups of all kinds.",
+        image: "/lodge-icon.png",
+        features: [
+          "Comfortable private and semi-private rooms",
+          "Stone fireplace in main gathering area",
+          "Panoramic views of surrounding forest",
+          "Multiple meeting spaces",
+          "Outdoor deck and seating areas"
+        ],
+        capacity: "The Lodge can accommodate up to 40 overnight guests with flexible meeting space for 75 people."
+      },
+      "dining-hall": {
+        name: "Dining Hall",
+        description: "Our spacious dining hall is where groups gather for nourishing meals and fellowship. The warm, inviting atmosphere makes every meal a community experience that enhances your retreat.",
+        image: "/utensils-icon.png",
+        features: [
+          "Commercial kitchen facilities",
+          "Buffet-style serving area",
+          "Large communal dining tables",
+          "Scenic views while dining",
+          "Accommodate special dietary needs"
+        ],
+        capacity: "The dining hall can serve up to 120 people at one time."
+      },
+      "life-center": {
+        name: "Life Center",
+        description: "Our Life Center is a versatile space perfect for large gatherings, worship sessions, and various activities. The modern design and flexible layout make it ideal for conferences, performances, and interactive events.",
+        image: "/compass-icon.png",
+        features: [
+          "Professional sound and lighting system",
+          "Stage area for presentations",
+          "Flexible seating arrangements",
+          "Breakout meeting rooms",
+          "Indoor recreational options"
+        ],
+        capacity: "The Life Center can accommodate up to 200 people in auditorium-style seating or 150 with tables."
+      },
+      "outback-lodge": {
+        name: "Outback Lodge",
+        description: "The Outback Lodge offers a rustic retreat space nestled deeper in nature for a more secluded experience. This facility is perfect for groups seeking a deeper connection with the natural environment.",
+        image: "/tent-icon.png",
+        features: [
+          "Secluded forest location",
+          "Rustic but comfortable sleeping quarters",
+          "Covered outdoor gathering space",
+          "Dedicated campfire area",
+          "Access to hiking trails"
+        ],
+        capacity: "The Outback Lodge accommodates up to 24 people in a more intimate setting."
+      },
+      "lower-lodge": {
+        name: "Lower Lodge",
+        description: "The Lower Lodge provides a cozy meeting space with scenic views, perfect for smaller gatherings. Its location offers both convenience and a sense of peaceful seclusion.",
+        image: "/cottage-icon.png",
+        features: [
+          "Comfortable lounge furniture",
+          "Kitchenette for light refreshments",
+          "Dedicated restroom facilities",
+          "Direct access to outdoor patio",
+          "Cozy fireplace"
+        ],
+        capacity: "The Lower Lodge can accommodate meetings and gatherings for up to 35 people."
+      },
+      "the-barn": {
+        name: "The Barn",
+        description: "The Barn is our rustic multi-purpose space for activities, games, and indoor recreation. This renovated structure maintains its charming agricultural heritage while providing modern amenities for multiple uses.",
+        image: "/campfire-icon.png",
+        features: [
+          "High ceilings with exposed beams",
+          "Large open floor plan",
+          "Game equipment available",
+          "Indoor sports capabilities",
+          "Heating for year-round use"
+        ],
+        capacity: "The Barn can accommodate activities for up to 75 people depending on setup."
+      }
+    };
+    
+    // Scrolling functionality
     if (container && scrollLeftBtn && scrollRightBtn) {
       const cardWidth = 320; // The width of each card (w-80) plus the gap
       
@@ -223,6 +330,63 @@
       
       scrollRightBtn.addEventListener('click', () => {
         container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      });
+    }
+    
+    // Facility card click handling to open modal
+    facilityCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const facilityId = card.getAttribute('data-facility');
+        const facilityData = facilitiesData[facilityId];
+        
+        if (facilityData) {
+          // Fill the modal with data
+          document.getElementById('modal-title').textContent = facilityData.name;
+          document.getElementById('modal-description').textContent = facilityData.description;
+          document.getElementById('modal-capacity').textContent = facilityData.capacity;
+          
+          // Set the image
+          const modalImg = document.getElementById('modal-image');
+          modalImg.src = facilityData.image;
+          modalImg.alt = facilityData.name;
+          
+          // Clear and populate features
+          const featuresList = document.getElementById('modal-features');
+          featuresList.innerHTML = '';
+          facilityData.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.textContent = feature;
+            featuresList.appendChild(li);
+          });
+          
+          // Show modal
+          facilityModal.classList.remove('hidden');
+          document.body.classList.add('overflow-hidden');
+        }
+      });
+    });
+    
+    // Close modal button
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', () => {
+        facilityModal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      });
+      
+      // Close on backdrop click
+      facilityModal.addEventListener('click', (e) => {
+        if (e.target === facilityModal) {
+          facilityModal.classList.add('hidden');
+          document.body.classList.remove('overflow-hidden');
+        }
+      });
+      
+      // Close on escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !facilityModal.classList.contains('hidden')) {
+          facilityModal.classList.add('hidden');
+          document.body.classList.remove('overflow-hidden');
+        }
       });
     }
   });
